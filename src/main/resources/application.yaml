@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: poc-java-spring-ai
