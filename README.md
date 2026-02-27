@@ -72,3 +72,28 @@ mvn spring-boot:run
 ````
  curl "http://localhost:8080/ai/ask?question=Explique%20o%20que%20%C3%A9%20Spring%20Boot"
 ````
+### 🔍 6️⃣ Endpoint disponível
+
+````
+GET /ai/ask?question={pergunta}
+````
+
+Exemplo:
+
+````
+GET /ai/ask?question=Explique%20Java%20Locks
+````
+
+### 📈 8️ Próximas Fases
+
+- Fase 2 → Prompt Template estruturado
+
+- Fase 3 → Memory (conversação contextual)
+
+- Fase 4 → Embeddings
+
+- Fase 5 → RAG (Retrieval Augmented Generation)
+
+- Fase 6 → Tool Calling
+
+- Fase 7 → Streaming
