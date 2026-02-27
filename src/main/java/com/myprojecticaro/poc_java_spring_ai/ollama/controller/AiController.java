@@ -20,5 +20,19 @@ public class AiController {
                 .user(question)
                 .call()
                 .content();
+
+        /**
+         * Entrada:
+         * curl "http://localhost:8080/ai/ask?question=Explique%20o%20que%20%C3%A9%20Spring%20Boot"
+         *
+         * Saida:
+         *
+         * StatusCode        : 200
+         * StatusDescription :
+         * Content           : Spring Boot!
+         *
+         *                     Spring Boot é um framework de desenvolvimento de software que facilita a criação de aplicativos web e empresariais com Java. Ele é
+         *                     baseado no framework Spring, mas oferece uma abordagem ...
+         */
     }
 }
