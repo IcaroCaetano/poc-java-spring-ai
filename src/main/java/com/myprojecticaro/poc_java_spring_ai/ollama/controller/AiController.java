@@ -1,5 +1,6 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.controller;
 
+import com.myprojecticaro.poc_java_spring_ai.ollama.service.AiService;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,10 +9,12 @@ import org.springframework.web.bind.annotation.*;
 public class AiController {
 
     private final ChatClient chatClient;
+    private final AiService aiService;
 
-    public AiController(ChatClient.Builder builder) {
+    public AiController(ChatClient.Builder builder, AiService aiService) {
 
         this.chatClient = builder.build();
+        this.aiService = aiService;
     }
 
     @GetMapping("/ask")
@@ -34,5 +37,10 @@ public class AiController {
          *                     Spring Boot é um framework de desenvolvimento de software que facilita a criação de aplicativos web e empresariais com Java. Ele é
          *                     baseado no framework Spring, mas oferece uma abordagem ...
          */
+    }
+
+    @GetMapping("/askv1")
+    public String askv1(@RequestParam String question) {
+        return aiService.ask(question);
     }
 }
