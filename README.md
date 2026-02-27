@@ -26,6 +26,15 @@ O objetivo da Fase 1 é:
 
 ### 🏗️ 2️⃣ Stack Tecnológica
 
+| Tecnologia   | Versão          |
+|--------------|-----------------|
+| Java         | 21 (LTS)        |
+| Spring Boot  | 3.3+            |
+| Spring AI    | 1.0.0           |
+| Maven        | 3.9+            |
+| Ollama       | Última versão   |
+| Modelo       | llama3          |
+
 ### 🧠 3️⃣ Arquitetura Atual (Fase 1)
 
 ````
