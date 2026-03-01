@@ -206,3 +206,17 @@ GET /ai/ask?question=Explique%20Java%20Locks
 - A latência depende de CPU e RAM
 
 - A temperatura controla a criatividade da resposta
+
+### Próximas Fases
+
+Fase 3 → Memory (conversação contextual)
+
+Fase 4 → Embeddings
+
+Fase 5 → RAG (Retrieval Augmented Generation)
+
+Fase 6 → Tool Calling
+
+Fase 7 → Streaming
+
+Fase 8 → Observabilidade e métricas
