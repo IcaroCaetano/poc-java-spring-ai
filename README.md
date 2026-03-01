@@ -147,3 +147,18 @@ Isso garante:
 - Controle de tom
 
 - Maior previsibilidade
+
+
+## ⚙️ 4️⃣ Configuração
+
+```
+application.yml
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: llama3
+        options:
+          temperature: 0.3
+```
