@@ -14,6 +14,7 @@ Esta Proof of Concept (POC) demonstra a integração entre:
 
 - Java 21
 
+
 O objetivo da Fase 1 é:
 
 - Integrar uma LLM local
@@ -183,3 +184,15 @@ mvn spring-boot:run
 ````
  curl "http://localhost:8080/ai/ask?question=Explique%20o%20que%20%C3%A9%20Spring%20Boot"
 ````
+
+### 🔍 6️⃣ Endpoint disponível
+
+```
+GET /ai/ask?question={pergunta}
+```
+
+Exemplo:
+
+```
+GET /ai/ask?question=Explique%20Java%20Locks
+```
