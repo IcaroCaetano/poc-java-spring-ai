@@ -130,3 +130,20 @@ Fluxo atualizado:
 ````
 Client → Controller → Service → ChatClient → Ollama → Response
 ````
+
+### 🧠 System Prompt Implementado
+
+O modelo agora recebe contexto fixo:
+
+Você é um especialista em Java e Spring.
+Responda de forma técnica, clara e objetiva.
+
+Isso garante:
+
+- Respostas mais técnicas
+
+- Padronização
+
+- Controle de tom
+
+- Maior previsibilidade
