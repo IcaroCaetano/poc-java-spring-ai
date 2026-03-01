@@ -106,3 +106,27 @@ GET /ai/ask?question=Explique%20Java%20Locks
 - Fase 6 → Tool Calling
 
 - Fase 7 → Streaming
+
+🚀 Fase 2 — Prompt Template Estruturado
+🎯 Objetivo
+Separar System Prompt e User Prompt
+
+Definir comportamento do modelo
+
+Melhorar qualidade e consistência das respostas
+
+Introduzir camada de serviço
+
+### 🏗️ Arquitetura Atual (Fase 2)
+
+controller
+ └── AiController
+
+service
+ └── AiService
+
+Fluxo atualizado:
+
+````
+Client → Controller → Service → ChatClient → Ollama → Response
+````
