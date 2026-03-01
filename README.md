@@ -196,3 +196,13 @@ Exemplo:
 ```
 GET /ai/ask?question=Explique%20Java%20Locks
 ```
+
+### 🧪 Observações Técnicas
+
+- A primeira chamada pode demorar (cold start do modelo)
+
+- O processamento ocorre 100% local
+
+- A latência depende de CPU e RAM
+
+- A temperatura controla a criatividade da resposta
