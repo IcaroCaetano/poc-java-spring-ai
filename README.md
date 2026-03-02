@@ -94,7 +94,7 @@ Exemplo:
 GET /ai/ask?question=Explique%20Java%20Locks
 ````
 
-### 📈 8️ Próximas Fases
+### 📈 Próximas Fases
 
 - Fase 2 → Prompt Template estruturado
 
