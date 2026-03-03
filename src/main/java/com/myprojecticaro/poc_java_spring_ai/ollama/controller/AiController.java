@@ -44,10 +44,31 @@ public class AiController {
 
         /**
          * Entrada:
-         * curl -G http://localhost:8080/ai/ask \
-         *   --data-urlencode "question=Explique o que é Spring Boot"
+         * curl "http://localhost:8080/ai/askv1?question=Explique%20o%20que%20%C3%A9%20Spring%20Boot"
          */
 
         return aiService.ask(question);
+
+
+        /**
+         * Saida:
+         *
+         *
+         StatusCode        : 200
+         StatusDescription :
+         Content           : Spring Boot!
+
+         Spring Boot é um framework de desenvolvimento de software que facilita a criação de aplicativos web e empresariais utilizando as
+         tecnologias da Java. Ele é uma extensão do framework Spri...
+         RawContent        : HTTP/1.1 200
+         Content-Length: 1770
+         Content-Type: text/plain;charset=UTF-8
+         Date: Tue, 03 Mar 2026 01:56:44 GMT
+
+         Spring Boot!
+
+         Spring Boot é um framework de desenvolvimento de software que facilita...
+
+         */
     }
 }
