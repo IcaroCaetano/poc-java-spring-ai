@@ -41,6 +41,13 @@ public class AiController {
 
     @GetMapping("/askv1")
     public String askv1(@RequestParam String question) {
+
+        /**
+         * Entrada:
+         * curl -G http://localhost:8080/ai/ask \
+         *   --data-urlencode "question=Explique o que é Spring Boot"
+         */
+
         return aiService.ask(question);
     }
 }
