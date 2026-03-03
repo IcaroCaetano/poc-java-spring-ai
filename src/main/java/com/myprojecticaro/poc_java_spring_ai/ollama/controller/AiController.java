@@ -1,5 +1,6 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.controller;
 
+import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AskRequest;
 import com.myprojecticaro.poc_java_spring_ai.ollama.service.AiService;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.*;
@@ -58,17 +59,17 @@ public class AiController {
          StatusDescription :
          Content           : Spring Boot!
 
-         Spring Boot é um framework de desenvolvimento de software que facilita a criação de aplicativos web e empresariais utilizando as
-         tecnologias da Java. Ele é uma extensão do framework Spri...
+         Spring Boot is a sub-project of the Spring Framework that simplifies the creation of stand-alone, production-grade applications with
+         minimal configuration and coding effort. It's designe...
          RawContent        : HTTP/1.1 200
-         Content-Length: 1770
+         Content-Length: 2555
          Content-Type: text/plain;charset=UTF-8
-         Date: Tue, 03 Mar 2026 01:56:44 GMT
-
-         Spring Boot!
-
-         Spring Boot é um framework de desenvolvimento de software que facilita...
-
+         Date: Tue, 03 Mar 2026 02:06:58 GMT
          */
+    }
+
+    @PostMapping("/ask")
+    public String ask(@RequestBody AskRequest request) {
+        return aiService.ask(request.question());
     }
 }
