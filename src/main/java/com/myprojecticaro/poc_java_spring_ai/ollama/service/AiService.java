@@ -19,6 +19,7 @@ public class AiService {
                 .system("""
                         Você é um especialista em Java e Spring.
                         Responda de forma técnica, clara e objetiva.
+                         Se possível, inclua exemplos práticos.
                         """)
                 .user(question)
                 .call()
