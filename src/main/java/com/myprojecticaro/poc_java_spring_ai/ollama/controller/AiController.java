@@ -126,4 +126,15 @@ public class AiController {
          * }
          */
     }
+
+    @PostMapping("/askv2")
+    public AnswerResponse askv2(@RequestBody QuestionRequest request) {
+
+        String response = aiService.askv2(
+                request.conversationId(),
+                request.question()
+        );
+
+        return new AnswerResponse(response);
+    }
 }
