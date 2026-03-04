@@ -70,6 +70,7 @@ public class AiController {
 
     @PostMapping("/ask")
     public String ask(@RequestBody AskRequest request) {
+
         return aiService.ask(request.question());
     }
 }
