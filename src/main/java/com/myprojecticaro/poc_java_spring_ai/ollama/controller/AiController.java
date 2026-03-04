@@ -130,11 +130,75 @@ public class AiController {
     @PostMapping("/askv2")
     public AnswerResponse askv2(@RequestBody QuestionRequest request) {
 
+        /**
+         * Entrada 1
+         *
+         * {
+         *   "conversationId": "dev-001",
+         *   "question": "O que é Spring Boot?"
+         * }
+         */
+
+        /**
+         * Entrada 2:
+         *
+         * {
+         *   "conversationId": "dev-001",
+         *   "question": "Ele usa Inversão de Controle?"
+         * }
+         */
+
         String response = aiService.askv2(
                 request.conversationId(),
                 request.question()
         );
 
         return new AnswerResponse(response);
+
+        /**
+         * Saida 1:
+         * {
+         *   "answer": "Excelente pergunta!\n\nSpring Boot é um framework de desenvolvimento
+         *   de software que se baseia no framework de injeção de dependências Spring. Ele foi
+         *   criado para facilitar o desenvolvimento de aplicativos web e de negócios com Java,
+         *   tornando mais fácil criar aplicativos robustos e escaláveis.\n\nSpring Boot é projetado
+         *   para ser uma opção mais fácil e rápida para desenvolver aplicativos com Spring, sem a
+         *   necessidade de configurar manualmente a maioria das configurações. Isso é possível graças
+         *   ao conceito de \"auto-configuration\", que permite que o framework configure automaticamente
+         *   as dependências e as configurações necessárias para o aplicativo.\n\nAlguns dos principais
+         *   benefícios de usar Spring Boot incluem:\n\n* Auto-configuration: Spring Boot configura
+         *   automaticamente as dependências e as configurações necessárias para o aplicativo.\n*
+         *   Simplificado: Spring Boot remove a necessidade de configurar manualmente a maioria das
+         *   configurações, tornando mais fácil o desenvolvimento de aplicativos.\n* Rápido: Spring
+         *   Boot permite criar aplicativos rapidamente, pois não é necessário configurar manualmente
+         *   as dependências e as configurações.\n* Escalável: Spring Boot é projetado para ser
+         *   escalável, permitindo que os aplicativos cresçam e sejam escalados facilmente.\n\nSpring
+         *   Boot é amplamente utilizado para desenvolver aplicativos web, de negócios, de APIs e de
+         *   microserviços, e é uma das opções mais populares para desenvolver aplicativos com Java."
+         * }
+         */
+
+        /**
+         * Saida 2:
+         *
+         * {
+         *   "answer": "Excelente pergunta!\n\nSpring Boot é um framework de desenvolvimento de software que se
+         *   baseia no framework de injeção de dependências Spring. Ele foi criado para facilitar o
+         *   desenvolvimento de aplicativos web e de negócios com Java, tornando mais fácil criar aplicativos
+         *   robustos e escaláveis.\n\nSpring Boot é projetado para ser uma opção mais fácil e rápida para
+         *   desenvolver aplicativos com Spring, sem a necessidade de configurar manualmente a maioria das
+         *   configurações. Isso é possível graças ao conceito de \"auto-configuration\", que permite que o
+         *   framework configure automaticamente as dependências e as configurações necessárias para o
+         *   aplicativo.\n\nAlguns dos principais benefícios de usar Spring Boot incluem:\n\n*
+         *   Auto-configuration: Spring Boot configura automaticamente as dependências e as configurações
+         *   necessárias para o aplicativo.\n* Simplificado: Spring Boot remove a necessidade de configurar
+         *   manualmente a maioria das configurações, tornando mais fácil o desenvolvimento de aplicativos.\n*
+         *   Rápido: Spring Boot permite criar aplicativos rapidamente, pois não é necessário configurar
+         *   manualmente as dependências e as configurações.\n* Escalável: Spring Boot é projetado para ser
+         *   escalável, permitindo que os aplicativos cresçam e sejam escalados facilmente.\n\nSpring Boot é
+         *   amplamente utilizado para desenvolver aplicativos web, de negócios, de APIs e de microserviços,
+         *   e é uma das opções mais populares para desenvolver aplicativos com Java."
+         * }
+         */
     }
 }
