@@ -1,6 +1,8 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.controller;
 
+import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AnswerResponse;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AskRequest;
+import com.myprojecticaro.poc_java_spring_ai.ollama.domain.QuestionRequest;
 import com.myprojecticaro.poc_java_spring_ai.ollama.service.AiService;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.*;
@@ -69,8 +71,10 @@ public class AiController {
     }
 
     @PostMapping("/ask")
-    public String ask(@RequestBody AskRequest request) {
+    public AnswerResponse ask(@RequestBody QuestionRequest request) {
 
-        return aiService.ask(request.question());
+        String response = aiService.ask(request.question());
+
+        return new AnswerResponse(response);
     }
 }
