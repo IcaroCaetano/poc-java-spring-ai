@@ -72,10 +72,6 @@ public class AiService {
      *     <li>Inclui histórico da conversa via ChatMemory</li>
      *     <li>Retorna resposta incremental via streaming</li>
      * </ul>
-     *
-     * @see org.springframework.ai.chat.client.ChatClient
-     * @see org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor
-     * @see org.springframework.ai.chat.memory.ChatMemory
      */
     public Flux<String> stream(String conversationId, String question) {
 
