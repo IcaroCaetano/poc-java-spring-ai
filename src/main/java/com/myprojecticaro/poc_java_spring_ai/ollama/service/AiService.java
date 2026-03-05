@@ -4,6 +4,7 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
 @Service
 public class AiService {
@@ -45,6 +46,23 @@ public class AiService {
                                 .build()
                 )
                 .call()
+                .content();
+    }
+
+    public Flux<String> stream(String conversationId, String question) {
+
+        return chatClient.prompt()
+                .system("""
+                    Você é um especialista em Java e Spring.
+                    Responda de forma clara e use o contexto da conversa.
+                    """)
+                .user(question)
+                .advisors(
+                        MessageChatMemoryAdvisor.builder(chatMemory)
+                                .conversationId(conversationId)
+                                .build()
+                )
+                .stream()
                 .content();
     }
 }
