@@ -207,9 +207,7 @@ public class AiController {
     /**
      * Endpoint REST responsável por expor streaming de respostas da IA
      * utilizando Server-Sent Events (SSE).
-     *
-     * <p>Este endpoint consome um {@link QuestionRequest} contendo
-     * o identificador da conversa e a pergunta do usuário.</p>
+
      *
      * <p>A resposta é retornada no formato {@code text/event-stream},
      * permitindo que o cliente receba os tokens da resposta de forma incremental,
