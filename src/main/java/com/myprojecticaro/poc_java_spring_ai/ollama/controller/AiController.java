@@ -215,7 +215,8 @@ public class AiController {
      * permitindo que o cliente receba os tokens da resposta de forma incremental,
      * sem aguardar a conclusão completa do processamento.</p>
      * */
-    @PostMapping(value = "/ask-stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    @PostMapping(value = "/ask-stream",
+            produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<String> askStream(@RequestBody QuestionRequest request) {
 
         return aiService.stream(request.conversationId(),
