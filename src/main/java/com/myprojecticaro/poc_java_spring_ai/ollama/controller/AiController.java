@@ -4,7 +4,9 @@ import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AnswerResponse;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.QuestionRequest;
 import com.myprojecticaro.poc_java_spring_ai.ollama.service.AiService;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Flux;
 
 @RestController
 @RequestMapping("/ai")
@@ -200,5 +202,13 @@ public class AiController {
          *   e é uma das opções mais populares para desenvolver aplicativos com Java."
          * }
          */
+    }
+
+    @PostMapping(value = "/ask-stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<String> askStream(@RequestBody QuestionRequest request) {
+
+        return aiService.stream(request.conversationId(),
+                request.question()
+        );
     }
 }
