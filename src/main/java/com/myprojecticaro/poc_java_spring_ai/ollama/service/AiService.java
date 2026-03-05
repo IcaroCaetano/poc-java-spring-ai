@@ -61,10 +61,6 @@ public class AiService {
      * associando as mensagens a um {@code conversationId}. Isso permite manter contexto
      * entre múltiplas interações do mesmo usuário.</p>
      *
-     * @param conversationId identificador único da conversa, utilizado para manter o contexto
-     *                       da interação com a IA.
-     * @param question       pergunta enviada pelo usuário ao modelo.
-     * @return {@link Flux} de {@link String} contendo os tokens gerados em tempo real.
      *
      * <p><b>Comportamento:</b></p>
      * <ul>
@@ -74,6 +70,8 @@ public class AiService {
      * </ul>
      */
     public Flux<String> stream(String conversationId, String question) {
+        // Flux<String>
+        // Valores chegando ao longo do tempo
 
         return chatClient.prompt()
                 .system("""
