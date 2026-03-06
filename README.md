@@ -334,3 +334,44 @@ Body:
   - Redis 
   - Banco de dados 
   - Vector Store
+
+### 🚀 Fase 4 — Streaming de Respostas
+
+#### 🎯 Objetivo
+
+Permitir que o modelo envie a resposta gradualmente, token por token.
+
+Isso melhora muito a experiência do usuário, pois a resposta começa a aparecer imediatamente
+
+#### 🏗️ Arquitetura Atual (Fase 4)
+
+```
+controller
+ └── AiController
+
+service
+ └── AiService
+
+config
+ └── ChatMemoryConfig
+````
+
+Fluxo atualizado:
+
+````
+
+Client
+  ↓
+Controller
+  ↓
+Service
+  ↓
+ChatClient
+  ↓
+LLM Stream
+  ↓
+Flux<String>
+  ↓
+HTTP Streaming Response
+````
+
