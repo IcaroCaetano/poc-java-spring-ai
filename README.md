@@ -236,3 +236,13 @@ Client → Controller → Service → ChatClient
                                   ↓
                                Response
 ````
+
+#### 🧠 Como funciona a memória
+
+Cada conversa recebe um conversationId.
+
+Exemplo:
+
+````yaml
+conversationId = "dev-1"
+````
