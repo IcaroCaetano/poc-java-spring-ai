@@ -375,3 +375,35 @@ Flux<String>
 HTTP Streaming Response
 ````
 
+#### 🧠 O que é Streaming?
+
+Normalmente a LLM retorna a resposta apenas quando termina de gerar.
+
+Streaming permite retornar:
+
+````
+Spring
+ Boot
+ é
+ um
+ framework...
+````
+
+Ou seja, cada parte da resposta chega progressivamente.
+
+#### 🔬 Implementação
+
+O Spring AI utiliza programação reativa com:
+
+````
+Flux<String>
+````
+
+Flux representa um fluxo contínuo de dados.
+
+
+#### ⚙️ Endpoint Streaming
+
+````
+POST /ai/ask-stream
+````
