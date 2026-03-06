@@ -95,17 +95,19 @@ GET /ai/ask?question=Explique%20Java%20Locks
 ````
 
 
-🚀 Fase 2 — Prompt Template Estruturado
-🎯 Objetivo
-Separar System Prompt e User Prompt
+### 🚀 Fase 2 — Prompt Template Estruturado
 
-Definir comportamento do modelo
+#### 🎯 Objetivo
 
-Melhorar qualidade e consistência das respostas
+- Separar System Prompt e User Prompt
 
-Introduzir camada de serviço
+- Definir comportamento do modelo
 
-### 🏗️ Arquitetura Atual (Fase 2)
+- Melhorar qualidade e consistência das respostas
+
+- Introduzir camada de serviço
+
+#### 🏗️ Arquitetura Atual (Fase 2)
 
 controller
  └── AiController
@@ -209,3 +211,5 @@ Isso possibilita:
 - Continuidade de contexto
 
 - Experiência semelhante a um chatbot real
+
+#### 🏗️ Arquitetura Atual (Fase 3)
