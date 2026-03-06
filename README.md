@@ -246,3 +246,13 @@ Exemplo:
 ````yaml
 conversationId = "dev-1"
 ````
+
+Fluxo da conversa:
+
+````
+User: O que é Spring Boot?
+AI: resposta
+
+User: Ele usa IoC?
+AI: responde considerando a pergunta anterior
+````
