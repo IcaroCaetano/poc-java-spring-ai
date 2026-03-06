@@ -262,3 +262,20 @@ A memória mantém o histórico:
 ````
 A memória mantém o histórico:
 ````
+
+#### ⚙️ Configuração
+
+##### Bean de memória
+
+````
+ChatMemory
+````
+
+Utiliza memória em memória (RAM) durante a execução da aplicação.
+
+````java
+@Bean
+public ChatMemory chatMemory() {
+    return new InMemoryChatMemory();
+}
+````
