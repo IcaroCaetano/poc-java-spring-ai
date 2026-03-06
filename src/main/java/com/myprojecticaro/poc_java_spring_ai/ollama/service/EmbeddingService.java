@@ -8,6 +8,16 @@ public class EmbeddingService {
 
     private final EmbeddingModel embeddingModel;
 
+    /**
+     * Embeddings convertem texto em vetores numéricos.
+     * @param embeddingModel
+     *
+     * Exemplo:
+     *
+     * "Spring Boot"
+     * ↓
+     * [0.123, -0.882, 0.331, ...]
+     */
     public EmbeddingService(EmbeddingModel embeddingModel) {
         this.embeddingModel = embeddingModel;
     }

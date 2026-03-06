@@ -94,19 +94,6 @@ Exemplo:
 GET /ai/ask?question=Explique%20Java%20Locks
 ````
 
-### 📈 Próximas Fases
-
-- Fase 2 → Prompt Template estruturado
-
-- Fase 3 → Memory (conversação contextual)
-
-- Fase 4 → Embeddings
-
-- Fase 5 → RAG (Retrieval Augmented Generation)
-
-- Fase 6 → Tool Calling
-
-- Fase 7 → Streaming
 
 🚀 Fase 2 — Prompt Template Estruturado
 🎯 Objetivo
@@ -207,16 +194,6 @@ GET /ai/ask?question=Explique%20Java%20Locks
 
 - A temperatura controla a criatividade da resposta
 
-### Próximas Fases
+### 🚀 Fase 3 — Chat Memory (Conversação Contextual)
 
-Fase 3 → Memory (conversação contextual)
-
-Fase 4 → Embeddings
-
-Fase 5 → RAG (Retrieval Augmented Generation)
-
-Fase 6 → Tool Calling
-
-Fase 7 → Streaming
-
-Fase 8 → Observabilidade e métricas
+#### 🎯 Objetivo
