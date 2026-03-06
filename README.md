@@ -197,3 +197,15 @@ GET /ai/ask?question=Explique%20Java%20Locks
 ### 🚀 Fase 3 — Chat Memory (Conversação Contextual)
 
 #### 🎯 Objetivo
+
+Permitir que o modelo lembre do contexto da conversa, possibilitando diálogos contínuos.
+
+Introduz o conceito de memória de conversa, onde cada pergunta/resposta é armazenada e reutilizada em prompts futuros.
+
+Isso possibilita:
+
+- Conversas multi-turn
+
+- Continuidade de contexto
+
+- Experiência semelhante a um chatbot real
