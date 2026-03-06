@@ -256,3 +256,9 @@ AI: resposta
 User: Ele usa IoC?
 AI: responde considerando a pergunta anterior
 ````
+
+A memória mantém o histórico:
+
+````
+A memória mantém o histórico:
+````
