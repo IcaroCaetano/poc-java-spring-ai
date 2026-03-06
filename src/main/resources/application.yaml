@@ -8,3 +8,5 @@ spring:
         model: llama3
         options:
           temperature: 0.3
+      embedding:
+        model: nomic-embed-text
