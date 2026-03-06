@@ -292,3 +292,45 @@ ollama run llama3
 ````
 mvn spring-boot:run
 ````
+
+#### 3️⃣ Testar endpoint com memória
+
+````
+curl -X POST http://localhost:8080/ai/ask-memory \
+-H "Content-Type: application/json" \
+-d '{"conversationId":"dev-1","question":"O que é Spring Boot?"}'
+````
+
+Pergunta seguinte:
+
+````
+curl -X POST http://localhost:8080/ai/ask-memory \
+-H "Content-Type: application/json" \
+-d '{"conversationId":"dev-1","question":"Ele usa IoC?"}'
+````
+
+#### 🔍 Endpoint disponível
+
+````
+POST /ai/ask-memory
+````
+
+Body:
+
+````
+{
+  "conversationId": "dev-1",
+  "question": "O que é Spring Boot?"
+}
+````
+
+#### 🧪 Observações Técnicas
+
+- A memória é mantida somente enquanto a aplicação está rodando
+
+- Cada conversationId possui um histórico independente
+
+- Em produção normalmente utiliza-se:
+  - Redis 
+  - Banco de dados 
+  - Vector Store
