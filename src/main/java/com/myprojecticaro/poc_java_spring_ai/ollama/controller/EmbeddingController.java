@@ -17,6 +17,8 @@ public class EmbeddingController {
     public float[] embedding(@RequestParam String text) {
 
         /**
+         * Entrada:
+         *
          * curl "http://localhost:8080/ai/embedding?text=Spring Boot Framework"
          */
 
