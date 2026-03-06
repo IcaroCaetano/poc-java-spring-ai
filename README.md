@@ -407,3 +407,9 @@ Flux representa um fluxo contínuo de dados.
 ````
 POST /ai/ask-stream
 ````
+
+Retorna:
+
+````
+Flux<String>
+````
