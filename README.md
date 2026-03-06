@@ -213,3 +213,26 @@ Isso possibilita:
 - Experiência semelhante a um chatbot real
 
 #### 🏗️ Arquitetura Atual (Fase 3)
+
+````
+controller
+ └── AiController
+
+service
+ └── AiService
+
+config
+ └── ChatMemoryConfig
+````
+
+Fluxo atualizado:
+
+````
+Client → Controller → Service → ChatClient
+                                  ↓
+                             ChatMemory
+                                  ↓
+                               Ollama
+                                  ↓
+                               Response
+````
