@@ -279,3 +279,16 @@ public ChatMemory chatMemory() {
     return new InMemoryChatMemory();
 }
 ````
+#### 🚀 Execução
+
+#### 1️⃣ Subir Ollama
+
+````
+ollama run llama3
+````
+
+#### 2️⃣ Rodar aplicação
+
+````
+mvn spring-boot:run
+````
