@@ -413,3 +413,12 @@ Retorna:
 ````
 Flux<String>
 ````
+
+
+#### 🚀 Teste via curl
+
+````
+curl -N -H "Content-Type: application/json" -X POST http://localhost:8080/ai/ask-stream -d "{\"conversationId\":\"dev-stream-1\",\"question\":\"Explique o que é Spring Boot\"}"
+````
+
+#### 🔍 Fluxo de execução
