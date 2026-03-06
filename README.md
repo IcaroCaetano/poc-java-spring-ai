@@ -422,3 +422,27 @@ curl -N -H "Content-Type: application/json" -X POST http://localhost:8080/ai/ask
 ````
 
 #### 🔍 Fluxo de execução
+
+````
+User request
+     ↓
+Controller
+     ↓
+Service
+     ↓
+ChatClient.stream()
+     ↓
+Flux<String>
+     ↓
+Streaming HTTP Response
+````
+
+#### 🧪 Observações Técnicas
+
+- Streaming reduz latência percebida
+
+- Muito usado em chatbots
+
+- Ideal para interfaces em tempo real
+
+- Baseado em Reactive Streams
