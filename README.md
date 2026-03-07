@@ -588,6 +588,7 @@ Dependendo do modelo de embedding.
 
 - São utilizados em Vector Databases
 
+
 - Permitem construir sistemas RAG (Retrieval Augmented Generation)
 
 
