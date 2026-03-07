@@ -459,3 +459,61 @@ Transformar texto em vetores numéricos, permitindo:
 - recomendação
 
 - base para sistemas RAG
+
+
+#### 🧠 O que são Embeddings?
+
+Embeddings convertem texto em um vetor matemático.
+
+Exemplo:
+
+````
+
+"Spring Boot"
+↓
+[0.123, -0.882, 0.331, ...]
+````
+
+Esses vetores representam significado semântico.
+
+Textos semelhantes possuem vetores próximos.
+
+Exemplo:
+
+````
+"Spring Boot framework"
+"Framework Java para microservices"
+````
+
+Esses textos terão vetores próximos no espaço vetorial.
+
+#### 🏗️ Arquitetura Atual (Fase 5)
+
+
+````
+controller
+ ├── AiController
+ └── EmbeddingController
+
+service
+ ├── AiService
+ └── EmbeddingService
+
+````
+
+Fluxo:
+
+````
+
+Client
+ ↓
+Controller
+ ↓
+EmbeddingService
+ ↓
+EmbeddingModel
+ ↓
+Ollama
+ ↓
+Embedding Vector
+````
