@@ -2,13 +2,13 @@
 
 ## 🤖 POC — Spring AI com Ollama (Chat Simples)
 
+
 ### 📌 1️⃣ Objetivo
 
 Esta Proof of Concept (POC) demonstra a integração entre:
 
 - Spring AI
-
-- Spring Boot
+2- Spring Boot
 
 - Ollama
 
