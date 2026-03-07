@@ -446,3 +446,16 @@ Streaming HTTP Response
 - Ideal para interfaces em tempo real
 
 - Baseado em Reactive Streams
+
+### 🚀 Fase 5 — Embeddings
+#### 🎯 Objetivo
+
+Transformar texto em vetores numéricos, permitindo:
+
+- busca semântica
+
+- comparação de textos
+
+- recomendação
+
+- base para sistemas RAG
