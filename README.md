@@ -517,3 +517,18 @@ Ollama
  ↓
 Embedding Vector
 ````
+
+#### ⚙️ Modelo de Embedding
+
+Foi utilizado o modelo:
+
+````
+nomic-embed-text
+````
+
+Baixar modelo:
+
+````
+ollama pull nomic-embed-text
+````
+
