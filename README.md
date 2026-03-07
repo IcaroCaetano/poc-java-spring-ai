@@ -271,7 +271,7 @@ A memória mantém o histórico:
 ChatMemory
 ````
 
-Utiliza memória em memória (RAM) durante a execução da aplicação.
+Utiliza memória (RAM) durante a execução da aplicação.
 
 ````java
 @Bean
