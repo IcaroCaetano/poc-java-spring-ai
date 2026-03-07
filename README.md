@@ -13,7 +13,6 @@ Esta Proof of Concept (POC) demonstra a integração entre:
 
 - Java 21
 
-
 O objetivo da Fase 1 é:
 
 - Integrar uma LLM local
