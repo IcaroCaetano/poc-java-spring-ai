@@ -532,3 +532,52 @@ Baixar modelo:
 ollama pull nomic-embed-text
 ````
 
+#### ⚙️ Configuração
+
+````
+application.yml
+````
+
+````
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: llama3
+      embedding:
+        model: nomic-embed-text
+````
+
+#### 🚀 Testar endpoint
+
+````
+curl "http://localhost:8080/ai/embedding?text=Spring Boot Framework"
+
+````
+
+#### 🔍 Endpoint disponível
+
+````
+GET /ai/embedding?text={texto}
+````
+
+Resposta:
+
+````
+[
+0.021,
+-0.554,
+0.338,
+...
+]
+
+````
+
+Normalmente o vetor possui:
+
+- 768 dimensões
+
+- ou 1024 dimensões
+
+Dependendo do modelo de embedding.
