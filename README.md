@@ -581,3 +581,24 @@ Normalmente o vetor possui:
 - ou 1024 dimensões
 
 Dependendo do modelo de embedding.
+
+#### 🧪 Observações Técnicas
+
+- Embeddings são base de sistemas de busca semântica
+
+- São utilizados em Vector Databases
+
+- Permitem construir sistemas RAG (Retrieval Augmented Generation)
+
+
+#### 📈 Próximas Fases da POC
+
+Fase 6 → Semantic Search
+
+Fase 7 → Vector Database
+
+Fase 8 → RAG (Retrieval Augmented Generation)
+
+Fase 9 → Tool Calling
+
+Fase 10 → AI Agents
