@@ -461,6 +461,7 @@ Transformar texto em vetores numéricos, permitindo:
 - base para sistemas RAG
 
 
+
 #### 🧠 O que são Embeddings?
 
 Embeddings convertem texto em um vetor matemático.
