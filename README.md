@@ -582,12 +582,12 @@ Normalmente o vetor possui:
 
 Dependendo do modelo de embedding.
 
+
 #### 🧪 Observações Técnicas
 
 - Embeddings são base de sistemas de busca semântica
 
 - São utilizados em Vector Databases
-
 
 - Permitem construir sistemas RAG (Retrieval Augmented Generation)
 
