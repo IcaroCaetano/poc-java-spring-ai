@@ -166,7 +166,6 @@ ollama run llama3
 mvn spring-boot:run
 ```
 
-
 #### 3️⃣ Testar endpoint
 
 ````
