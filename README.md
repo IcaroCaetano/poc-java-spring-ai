@@ -184,6 +184,7 @@ Exemplo:
 GET /ai/ask?question=Explique%20Java%20Locks
 ```
 
+
 ### 🧪 Observações Técnicas
 
 - A primeira chamada pode demorar (cold start do modelo)
