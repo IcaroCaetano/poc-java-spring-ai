@@ -25,6 +25,7 @@ O objetivo da Fase 1 é:
 
 ### 🏗️ 2️⃣ Stack Tecnológica
 
+
 | Tecnologia   | Versão          |
 |--------------|-----------------|
 | Java         | 21 (LTS)        |
