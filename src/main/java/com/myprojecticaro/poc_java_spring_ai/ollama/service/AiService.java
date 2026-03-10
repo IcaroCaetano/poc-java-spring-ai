@@ -1,5 +1,6 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.service;
 
+import com.myprojecticaro.poc_java_spring_ai.ollama.component.WeatherTool;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -13,10 +14,14 @@ public class AiService {
 
     private final ChatMemory chatMemory;
 
+    private final WeatherTool weatherTool;
 
-    public AiService(ChatClient.Builder builder, ChatMemory chatMemory) {
+
+    public AiService(ChatClient.Builder builder, ChatMemory chatMemory,
+                     WeatherTool weatherTool) {
         this.chatClient = builder.build();
         this.chatMemory = chatMemory;
+        this.weatherTool = weatherTool;
     }
 
     public String ask(String question) {
@@ -85,6 +90,19 @@ public class AiService {
                                 .build()
                 )
                 .stream()
+                .content();
+    }
+
+    public String askWithTools(String question) {
+
+        return chatClient.prompt()
+                .system("""
+                        Você é um assistente inteligente.
+                        Sempre que perguntarem sobre clima use a tool getWeather.
+                        """)
+                .user(question)
+                .tools(weatherTool)
+                .call()
                 .content();
     }
 }
