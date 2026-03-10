@@ -7,13 +7,11 @@
 Esta Proof of Concept (POC) demonstra a integração entre:
 
 - Spring AI
-
-- Spring Boot
+2- Spring Boot
 
 - Ollama
 
 - Java 21
-
 
 O objetivo da Fase 1 é:
 
@@ -26,6 +24,7 @@ O objetivo da Fase 1 é:
 - Retornar resposta via API
 
 ### 🏗️ 2️⃣ Stack Tecnológica
+
 
 | Tecnologia   | Versão          |
 |--------------|-----------------|
@@ -167,7 +166,6 @@ ollama run llama3
 mvn spring-boot:run
 ```
 
-
 #### 3️⃣ Testar endpoint
 
 ````
@@ -189,6 +187,7 @@ GET /ai/ask?question=Explique%20Java%20Locks
 ### 🧪 Observações Técnicas
 
 - A primeira chamada pode demorar (cold start do modelo)
+
 
 - O processamento ocorre 100% local
 
@@ -581,6 +580,7 @@ Normalmente o vetor possui:
 - ou 1024 dimensões
 
 Dependendo do modelo de embedding.
+
 
 #### 🧪 Observações Técnicas
 
