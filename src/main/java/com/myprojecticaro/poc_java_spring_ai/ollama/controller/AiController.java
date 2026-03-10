@@ -1,6 +1,7 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.controller;
 
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AnswerResponse;
+import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AskRequest;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.QuestionRequest;
 import com.myprojecticaro.poc_java_spring_ai.ollama.service.AiService;
 import org.springframework.ai.chat.client.ChatClient;
@@ -220,5 +221,23 @@ public class AiController {
         return aiService.stream(request.conversationId(),
                 request.question()
         );
+    }
+
+    @PostMapping("/ask-tools")
+    public String askTools(@RequestBody AskRequest request) {
+        /**
+         * {
+         *   "question": "Como está o clima em Fortaleza?"
+         * }
+         */
+
+
+        return aiService.askWithTools(request.question());
+
+        /**
+         * Saida
+         *
+         * O clima em Fortaleza está com 29
+         */
     }
 }
