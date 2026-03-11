@@ -1,4 +1,8 @@
+
 # POC Java Spring AI
+
+![images.png](image/images.png)
+
 
 ## 🤖 POC — Spring AI com Ollama (Chat Simples)
 
