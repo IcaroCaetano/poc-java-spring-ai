@@ -1,6 +1,7 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.service;
 
 import com.myprojecticaro.poc_java_spring_ai.ollama.component.WeatherTool;
+import com.myprojecticaro.poc_java_spring_ai.ollama.domain.WeatherResponse;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -104,5 +105,21 @@ public class AiService {
                 .tools(weatherTool)
                 .call()
                 .content();
+    }
+
+    public WeatherResponse askWeatherStructured(String city) {
+
+        return chatClient.prompt()
+                .system("""
+                        Você é um assistente que responde apenas em JSON.
+
+                        Retorne:
+                        - city
+                        - temperature
+                        - condition
+                        """)
+                .user("Qual o clima em " + city + "?")
+                .call()
+                .entity(WeatherResponse.class);
     }
 }
