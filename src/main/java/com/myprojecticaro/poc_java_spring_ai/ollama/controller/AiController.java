@@ -3,6 +3,7 @@ package com.myprojecticaro.poc_java_spring_ai.ollama.controller;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AnswerResponse;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.AskRequest;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.QuestionRequest;
+import com.myprojecticaro.poc_java_spring_ai.ollama.domain.WeatherResponse;
 import com.myprojecticaro.poc_java_spring_ai.ollama.service.AiService;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.http.MediaType;
@@ -238,6 +239,30 @@ public class AiController {
          * Saida
          *
          * O clima em Fortaleza está com 29
+         */
+    }
+
+    @PostMapping("/weather-structured")
+    public WeatherResponse weatherStructured(@RequestParam String city) {
+        /**
+         * {
+         *   "city": "Fortaleza",
+         *   "temperature": 29,
+         *   "condition": "Ensolarado"
+         * }
+         */
+
+        return aiService.askWeatherStructured(city);
+
+        /**
+         * Saida:
+         *
+         *
+         * {
+         *   "city": "Fortaleza",
+         *   "temperature": 28,
+         *   "condition": "Parcialmente nublado"
+         * }
          */
     }
 }
