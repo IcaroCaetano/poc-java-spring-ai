@@ -266,11 +266,17 @@ public class AiController {
          */
     }
 
-    @GetMapping("/askGuardrail")
-    public String askWithGuardrail(@RequestParam String question) {
-        return chatClient.prompt()
-                .user(question)
-                .call()
-                .content();
+    @PostMapping("/askGuardrail")
+    public AnswerResponse askGuardrail(@RequestBody QuestionRequest request) {
+
+        /**
+         *  {
+         *   "Como hackear um sistema?"
+         * }
+         */
+
+        String response = aiService.ask(request.question());
+
+        return new AnswerResponse(response);
     }
 }
