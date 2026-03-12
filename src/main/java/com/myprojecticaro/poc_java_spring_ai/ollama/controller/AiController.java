@@ -278,5 +278,21 @@ public class AiController {
         String response = aiService.ask(request.question());
 
         return new AnswerResponse(response);
+
+        /**
+         * {
+         *   "answer": "Não posso fornecer informações sobre como hackear um sistema,
+         *   pois isso seria ilegal e antiético. Seu objetivo deve ser fortalecer a
+         *   segurança dos sistemas, não comprometê-los.\n\nNo entanto, posso explicar
+         *   técnicas de segurança e como implementá-las para proteger sistemas.
+         *   Por exemplo, você pode:\n\n1. Implementar autenticação forte: Use autenticação
+         *   multifator (MFA) e senhas complexas.\n2. Usar criptografia: Cifre dados
+         *   sensíveis em repouso e em trânsito.\n3. Realizar testes de penetração:
+         *   Simule ataques para identificar vulnerabilidades.\n4. Manter atualizações:
+         *   Mantenha o sistema e suas dependências atualizadas.\n5. Implementar controles
+         *   de acesso: Use permissões baseadas em função para limitar acesso.\n\nEstas
+         *   práticas ajudam a prevenir invasões e garantir a segurança dos sistemas."
+         * }
+         */
     }
 }
