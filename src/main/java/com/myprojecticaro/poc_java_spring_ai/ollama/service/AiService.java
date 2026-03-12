@@ -1,5 +1,6 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.service;
 
+import com.myprojecticaro.poc_java_spring_ai.ollama.component.InputGuardrail;
 import com.myprojecticaro.poc_java_spring_ai.ollama.component.WeatherTool;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.WeatherResponse;
 import org.springframework.ai.chat.client.ChatClient;
@@ -17,12 +18,15 @@ public class AiService {
 
     private final WeatherTool weatherTool;
 
+    private final InputGuardrail guardrail;
+
 
     public AiService(ChatClient.Builder builder, ChatMemory chatMemory,
-                     WeatherTool weatherTool) {
+                     WeatherTool weatherTool, InputGuardrail guardrail) {
         this.chatClient = builder.build();
         this.chatMemory = chatMemory;
         this.weatherTool = weatherTool;
+        this.guardrail = guardrail;
     }
 
     public String ask(String question) {
@@ -121,5 +125,19 @@ public class AiService {
                 .user("Qual o clima em " + city + "?")
                 .call()
                 .entity(WeatherResponse.class);
+    }
+    public String askWithGuardrail(String question) {
+
+        // validação antes da IA
+        guardrail.validate(question);
+
+        return chatClient.prompt()
+                .system("""
+                        Você é um especialista em Java e Spring.
+                        Responda de forma técnica e objetiva.
+                        """)
+                .user(question)
+                .call()
+                .content();
     }
 }
