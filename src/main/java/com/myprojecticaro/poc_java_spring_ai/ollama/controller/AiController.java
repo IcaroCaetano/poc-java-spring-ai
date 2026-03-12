@@ -265,4 +265,12 @@ public class AiController {
          * }
          */
     }
+
+    @GetMapping("/askGuardrail")
+    public String askWithGuardrail(@RequestParam String question) {
+        return chatClient.prompt()
+                .user(question)
+                .call()
+                .content();
+    }
 }
