@@ -798,3 +798,23 @@ city
 temperature
 condition
 ````
+
+O Spring AI converte automaticamente o JSON retornado pelo modelo para o DTO.
+
+### 🧪 Endpoint disponível
+
+````
+POST /ai/weather-structured
+````
+
+Resposta:
+
+````
+{
+  "city": "Fortaleza",
+  "temperature": 29,
+  "condition": "Ensolarado"
+}
+````
+
+🧪 Observações Técnicas
