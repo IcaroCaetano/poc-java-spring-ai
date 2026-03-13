@@ -842,3 +842,15 @@ Guardrails permitem:
 - aplicar políticas de segurança
 
 - reduzir risco de alucinações
+
+### 🧠 Por que Guardrails são necessários?
+
+LLMs podem gerar:
+
+- conteúdo inadequado
+
+- respostas incorretas
+
+- informações sensíveis
+
+Guardrails adicionam controle e proteção ao sistema.
