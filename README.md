@@ -817,4 +817,12 @@ Resposta:
 }
 ````
 
-🧪 Observações Técnicas
+### 🧪 Observações Técnicas
+
+- Structured Output utiliza conversão automática com Jackson
+
+- O modelo precisa gerar JSON válido
+
+- DTOs facilitam integração com serviços e bancos de dados
+
+- Esse padrão é amplamente utilizado em sistemas corporativos com IA
