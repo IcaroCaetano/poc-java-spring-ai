@@ -834,3 +834,11 @@ Resposta:
 Implementar camadas de segurança e controle sobre as interações com o modelo.
 
 Guardrails permitem:
+
+- bloquear perguntas inadequadas
+
+- validar respostas do modelo
+
+- aplicar políticas de segurança
+
+- reduzir risco de alucinações
