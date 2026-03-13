@@ -722,3 +722,22 @@ LLM gera resposta final
 - Foi necessário utilizar um modelo compatível (ex: qwen2.5)
 
 - Descrições das tools são importantes para o modelo decidir quando usá-las
+
+
+## 🚀 Fase 7 — Structured Output
+
+### 🎯 Objetivo
+
+Permitir que o modelo retorne objetos Java estruturados ao invés de texto livre.
+
+Isso elimina a necessidade de parsing manual de respostas do LLM.
+
+### 🧠 Problema resolvido
+
+Normalmente o modelo retorna texto:
+
+
+````
+
+O clima em Fortaleza está com 29°C e ensolarado.
+````
