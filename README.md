@@ -961,3 +961,26 @@ Fase 6 — Tool Calling
 Fase 7 — Structured Output
 Fase 8 — Guardrails
 ````
+A aplicação agora demonstra diversos recursos fundamentais do Spring AI.
+
+### 🔬 Conceitos explorados na POC
+
+Durante a implementação foram explorados:
+
+- ChatClient
+
+- Prompt Engineering
+
+- Chat Memory
+
+- Streaming de respostas
+
+- Embeddings
+
+- Tool Calling
+
+- Structured Output
+
+- Guardrails
+
+Esses conceitos representam grande parte das funcionalidades principais do Spring AI.
