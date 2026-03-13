@@ -97,9 +97,9 @@ GET /ai/ask?question=Explique%20Java%20Locks
 ````
 
 
-### 🚀 Fase 2 — Prompt Template Estruturado
+## 🚀 Fase 2 — Prompt Template Estruturado
 
-#### 🎯 Objetivo
+### 🎯 Objetivo
 
 - Separar System Prompt e User Prompt
 
@@ -109,7 +109,7 @@ GET /ai/ask?question=Explique%20Java%20Locks
 
 - Introduzir camada de serviço
 
-#### 🏗️ Arquitetura Atual (Fase 2)
+### 🏗️ Arquitetura Atual (Fase 2)
 
 controller
  └── AiController
@@ -198,7 +198,7 @@ GET /ai/ask?question=Explique%20Java%20Locks
 
 - A temperatura controla a criatividade da resposta
 
-### 🚀 Fase 3 — Chat Memory (Conversação Contextual)
+## 🚀 Fase 3 — Chat Memory (Conversação Contextual)
 
 #### 🎯 Objetivo
 
