@@ -752,3 +752,32 @@ condition = Ensolarado
 Structured Output resolve esse problema.
 
 ### 🏗️ Arquitetura Atual (Fase 7)
+
+````
+controller
+ └── AiController
+
+service
+ └── AiService
+
+dto
+ └── WeatherResponse
+````
+
+Fluxo:
+
+````
+Client
+ ↓
+Controller
+ ↓
+Service
+ ↓
+ChatClient
+ ↓
+LLM gera JSON
+ ↓
+Spring AI converte JSON
+ ↓
+DTO Java
+````
