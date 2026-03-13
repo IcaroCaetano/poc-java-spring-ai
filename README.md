@@ -741,3 +741,14 @@ Normalmente o modelo retorna texto:
 
 O clima em Fortaleza está com 29°C e ensolarado.
 ````
+Mas aplicações precisam de dados estruturados:
+
+````
+city = Fortaleza
+temperature = 29
+condition = Ensolarado
+````
+
+Structured Output resolve esse problema.
+
+### 🏗️ Arquitetura Atual (Fase 7)
