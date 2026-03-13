@@ -4,8 +4,6 @@
 ![images.png](image/images.png)
 
 
-## 🤖 POC — Spring AI com Ollama (Chat Simples)
-
 ### 📌 1️⃣ Objetivo
 
 Esta Proof of Concept (POC) demonstra a integração entre:
@@ -17,6 +15,7 @@ Esta Proof of Concept (POC) demonstra a integração entre:
 
 - Java 21
 
+## 🚀 Fase 1 — Integracao com LLM Local (Ollama)
 O objetivo da Fase 1 é:
 
 - Integrar uma LLM local
