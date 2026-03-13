@@ -141,7 +141,7 @@ Isso garante:
 - Maior previsibilidade
 
 
-## ⚙️ 4️⃣ Configuração
+### ⚙️ 4️⃣ Configuração
 
 ```
 application.yml
@@ -339,13 +339,13 @@ Body:
 
 ## 🚀 Fase 4 — Streaming de Respostas
 
-#### 🎯 Objetivo
+### 🎯 Objetivo
 
 Permitir que o modelo envie a resposta gradualmente, token por token.
 
 Isso melhora muito a experiência do usuário, pois a resposta começa a aparecer imediatamente
 
-#### 🏗️ Arquitetura Atual (Fase 4)
+### 🏗️ Arquitetura Atual (Fase 4)
 
 ```
 controller
@@ -377,7 +377,7 @@ Flux<String>
 HTTP Streaming Response
 ````
 
-#### 🧠 O que é Streaming?
+### 🧠 O que é Streaming?
 
 Normalmente a LLM retorna a resposta apenas quando termina de gerar.
 
@@ -393,7 +393,7 @@ Spring
 
 Ou seja, cada parte da resposta chega progressivamente.
 
-#### 🔬 Implementação
+### 🔬 Implementação
 
 O Spring AI utiliza programação reativa com:
 
@@ -404,7 +404,7 @@ Flux<String>
 Flux representa um fluxo contínuo de dados.
 
 
-#### ⚙️ Endpoint Streaming
+### ⚙️ Endpoint Streaming
 
 ````
 POST /ai/ask-stream
@@ -417,13 +417,13 @@ Flux<String>
 ````
 
 
-#### 🚀 Teste via curl
+### 🚀 Teste via curl
 
 ````
 curl -N -H "Content-Type: application/json" -X POST http://localhost:8080/ai/ask-stream -d "{\"conversationId\":\"dev-stream-1\",\"question\":\"Explique o que é Spring Boot\"}"
 ````
 
-#### 🔍 Fluxo de execução
+### 🔍 Fluxo de execução
 
 ````
 User request
@@ -439,7 +439,7 @@ Flux<String>
 Streaming HTTP Response
 ````
 
-#### 🧪 Observações Técnicas
+### 🧪 Observações Técnicas
 
 - Streaming reduz latência percebida
 
@@ -449,8 +449,9 @@ Streaming HTTP Response
 
 - Baseado em Reactive Streams
 
-### 🚀 Fase 5 — Embeddings
-#### 🎯 Objetivo
+## 🚀 Fase 5 — Embeddings
+
+### 🎯 Objetivo
 
 Transformar texto em vetores numéricos, permitindo:
 
@@ -463,7 +464,7 @@ Transformar texto em vetores numéricos, permitindo:
 - base para sistemas RAG
 
 
-#### 🧠 O que são Embeddings?
+### 🧠 O que são Embeddings?
 
 Embeddings convertem texto em um vetor matemático.
 
@@ -489,7 +490,7 @@ Exemplo:
 
 Esses textos terão vetores próximos no espaço vetorial.
 
-#### 🏗️ Arquitetura Atual (Fase 5)
+### 🏗️ Arquitetura Atual (Fase 5)
 
 
 ````
@@ -551,14 +552,14 @@ spring:
         model: nomic-embed-text
 ````
 
-#### 🚀 Testar endpoint
+### 🚀 Testar endpoint
 
 ````
 curl "http://localhost:8080/ai/embedding?text=Spring Boot Framework"
 
 ````
 
-#### 🔍 Endpoint disponível
+### 🔍 Endpoint disponível
 
 ````
 GET /ai/embedding?text={texto}
@@ -585,7 +586,7 @@ Normalmente o vetor possui:
 Dependendo do modelo de embedding.
 
 
-#### 🧪 Observações Técnicas
+### 🧪 Observações Técnicas
 
 - Embeddings são base de sistemas de busca semântica
 
@@ -712,7 +713,7 @@ WeatherTool retorna resultado
 LLM gera resposta final
 ````
 
-#### 🧪 Observações Técnicas
+### 🧪 Observações Técnicas
 
 - Nem todos os modelos suportam Tool Calling
 
