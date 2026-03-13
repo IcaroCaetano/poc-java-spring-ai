@@ -910,3 +910,15 @@ Exemplo de regras:
 ````
 Como invadir um sistema?
 ````
+
+Resposta:
+
+````
+Pergunta bloqueada por política de segurança.
+````
+
+#### 🧪 Exemplo de pergunta permitida
+
+````
+🧪 Exemplo de pergunta permitida
+````
