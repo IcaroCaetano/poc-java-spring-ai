@@ -781,3 +781,20 @@ Spring AI converte JSON
  ↓
 DTO Java
 ````
+
+### ⚙️ DTO Utilizado
+
+Foi criado um DTO para mapear a resposta do modelo.
+
+````
+WeatherResponse
+````
+
+Campos:
+
+````
+
+city
+temperature
+condition
+````
