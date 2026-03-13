@@ -922,3 +922,8 @@ Pergunta bloqueada por política de segurança.
 ````
 🧪 Exemplo de pergunta permitida
 ````
+Resposta:
+
+````
+Resposta gerada normalmente pelo modelo.
+````
