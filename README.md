@@ -927,3 +927,23 @@ Resposta:
 ````
 Resposta gerada normalmente pelo modelo.
 ````
+#### 🧪 Observações Técnicas
+
+Guardrails podem ser aplicados em duas camadas:
+
+Input Guardrails
+Validação antes da chamada ao modelo.
+
+Output Guardrails
+Validação da resposta do modelo.
+
+Tipos comuns em produção:
+
+- Content Safety
+
+- Policy Enforcement
+
+- Hallucination Detection
+
+- Output Validation
+
