@@ -595,14 +595,29 @@ Dependendo do modelo de embedding.
 - Permitem construir sistemas RAG (Retrieval Augmented Generation)
 
 
-#### 📈 Próximas Fases da POC
+## 🚀 Fase 6 — Tool Calling (Function Calling)
+### 🎯 Objetivo
 
-Fase 6 → Semantic Search
+Permitir que o modelo execute funções Java da aplicação.
 
-Fase 7 → Vector Database
+Com Tool Calling o LLM pode:
 
-Fase 8 → RAG (Retrieval Augmented Generation)
+- executar lógica de negócio
 
-Fase 9 → Tool Calling
+- consultar APIs externas
 
-Fase 10 → AI Agents
+- acessar serviços da aplicação
+
+- integrar IA com sistemas reais
+
+Isso transforma o modelo de chatbot passivo em um assistente capaz de agir.
+
+### 🧠 O que são Tools?
+
+Tools são métodos Java expostos para o modelo.
+
+O LLM pode decidir quando chamá-los.
+
+Exemplo:
+
+Usuário pergunta:
