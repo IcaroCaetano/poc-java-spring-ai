@@ -621,3 +621,15 @@ O LLM pode decidir quando chamá-los.
 Exemplo:
 
 Usuário pergunta:
+
+```
+Como está o clima em Fortaleza?
+````
+
+O modelo decide chamar a Tool:
+
+````
+getWeather(city="Fortaleza")
+````
+
+A aplicação executa o método Java e devolve o resultado ao modelo.
