@@ -200,7 +200,7 @@ GET /ai/ask?question=Explique%20Java%20Locks
 
 ## 🚀 Fase 3 — Chat Memory (Conversação Contextual)
 
-#### 🎯 Objetivo
+### 🎯 Objetivo
 
 Permitir que o modelo lembre do contexto da conversa, possibilitando diálogos contínuos.
 
@@ -214,7 +214,7 @@ Isso possibilita:
 
 - Experiência semelhante a um chatbot real
 
-#### 🏗️ Arquitetura Atual (Fase 3)
+### 🏗️ Arquitetura Atual (Fase 3)
 
 ````
 controller
@@ -239,7 +239,7 @@ Client → Controller → Service → ChatClient
                                Response
 ````
 
-#### 🧠 Como funciona a memória
+### 🧠 Como funciona a memória
 
 Cada conversa recebe um conversationId.
 
@@ -265,7 +265,7 @@ A memória mantém o histórico:
 A memória mantém o histórico:
 ````
 
-#### ⚙️ Configuração
+### ⚙️ Configuração
 
 ##### Bean de memória
 
@@ -281,7 +281,7 @@ public ChatMemory chatMemory() {
     return new InMemoryChatMemory();
 }
 ````
-#### 🚀 Execução
+### 🚀 Execução
 
 #### 1️⃣ Subir Ollama
 
@@ -311,7 +311,7 @@ curl -X POST http://localhost:8080/ai/ask-memory \
 -d '{"conversationId":"dev-1","question":"Ele usa IoC?"}'
 ````
 
-#### 🔍 Endpoint disponível
+### 🔍 Endpoint disponível
 
 ````
 POST /ai/ask-memory
@@ -326,7 +326,7 @@ Body:
 }
 ````
 
-#### 🧪 Observações Técnicas
+### 🧪 Observações Técnicas
 
 - A memória é mantida somente enquanto a aplicação está rodando
 
@@ -337,7 +337,7 @@ Body:
   - Banco de dados 
   - Vector Store
 
-### 🚀 Fase 4 — Streaming de Respostas
+## 🚀 Fase 4 — Streaming de Respostas
 
 #### 🎯 Objetivo
 
