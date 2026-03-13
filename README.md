@@ -826,3 +826,11 @@ Resposta:
 - DTOs facilitam integração com serviços e bancos de dados
 
 - Esse padrão é amplamente utilizado em sistemas corporativos com IA
+
+## 🚀 Fase 8 — Guardrails
+
+### 🎯 Objetivo
+
+Implementar camadas de segurança e controle sobre as interações com o modelo.
+
+Guardrails permitem:
