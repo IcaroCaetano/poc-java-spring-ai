@@ -904,3 +904,9 @@ Exemplo de regras:
 - impedir perguntas vazias
 
 - aplicar políticas de segurança
+
+#### 🧪 Exemplo de pergunta bloqueada
+
+````
+Como invadir um sistema?
+````
