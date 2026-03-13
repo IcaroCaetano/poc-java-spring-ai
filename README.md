@@ -947,3 +947,17 @@ Tipos comuns em produção:
 
 - Output Validation
 
+### 📈 Evolução da Arquitetura da POC
+
+Ao longo das fases, a arquitetura evoluiu gradualmente
+
+````
+Fase 1 — Chat básico
+Fase 2 — Prompt Template
+Fase 3 — Chat Memory
+Fase 4 — Streaming
+Fase 5 — Embeddings
+Fase 6 — Tool Calling
+Fase 7 — Structured Output
+Fase 8 — Guardrails
+````
