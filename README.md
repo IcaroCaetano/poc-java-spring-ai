@@ -886,3 +886,21 @@ LLM
  ↓
 Resposta
 ````
+
+### ⚙️ Implementação
+
+Foi criada uma classe responsável por validar perguntas do usuário.
+
+````
+InputGuardrail
+````
+
+Esse componente analisa a pergunta antes de enviá-la ao modelo.
+
+Exemplo de regras:
+
+- bloquear termos relacionados a hacking
+
+- impedir perguntas vazias
+
+- aplicar políticas de segurança
