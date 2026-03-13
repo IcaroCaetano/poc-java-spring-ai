@@ -854,3 +854,35 @@ LLMs podem gerar:
 - informações sensíveis
 
 Guardrails adicionam controle e proteção ao sistema.
+
+
+### 🏗️ Arquitetura Atual (Fase 8)
+
+````
+controller
+ └── AiController
+
+service
+ └── AiService
+
+guardrails
+ └── InputGuardrail
+````
+
+Fluxo:
+
+````
+Client
+ ↓
+Controller
+ ↓
+Service
+ ↓
+InputGuardrail (validação)
+ ↓
+ChatClient
+ ↓
+LLM
+ ↓
+Resposta
+````
