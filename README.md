@@ -633,3 +633,55 @@ getWeather(city="Fortaleza")
 ````
 
 A aplicação executa o método Java e devolve o resultado ao modelo.
+
+### 🏗️ Arquitetura Atual (Fase 6)
+
+````
+controller
+ └── AiController
+
+service
+ └── AiService
+
+tools
+ └── WeatherTool
+````
+
+Fluxo:
+
+````
+Client
+ ↓
+Controller
+ ↓
+Service
+ ↓
+ChatClient
+ ↓
+LLM decide usar Tool
+ ↓
+WeatherTool
+ ↓
+Resposta final
+````
+
+### ⚙️ Implementação da Tool
+
+Foi criada uma Tool responsável por retornar informações de clima.
+
+````
+WeatherTool
+````
+
+Essa Tool é exposta ao modelo usando a anotação:
+
+````
+@Tool
+````
+
+Exemplo conceitual:
+
+````
+@Tool(description = "Retorna o clima atual de uma cidade")
+public String getWeather(String city)
+````
