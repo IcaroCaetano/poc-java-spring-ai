@@ -685,3 +685,40 @@ Exemplo conceitual:
 @Tool(description = "Retorna o clima atual de uma cidade")
 public String getWeather(String city)
 ````
+### 🧪 Testar endpoint
+
+````
+POST /ai/ask-tools
+````
+
+Body:
+
+````
+{
+  "question": "Como está o clima em Fortaleza?"
+}
+````
+
+Fluxo interno:
+
+````
+Pergunta
+ ↓
+LLM identifica pergunta sobre clima
+ ↓
+LLM chama WeatherTool
+ ↓
+WeatherTool retorna resultado
+ ↓
+LLM gera resposta final
+````
+
+#### 🧪 Observações Técnicas
+
+- Nem todos os modelos suportam Tool Calling
+
+- O modelo llama3 não suporta tools no Ollama
+
+- Foi necessário utilizar um modelo compatível (ex: qwen2.5)
+
+- Descrições das tools são importantes para o modelo decidir quando usá-las
