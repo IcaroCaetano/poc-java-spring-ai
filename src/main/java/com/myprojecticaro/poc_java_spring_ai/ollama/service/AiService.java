@@ -1,6 +1,7 @@
 package com.myprojecticaro.poc_java_spring_ai.ollama.service;
 
 import com.myprojecticaro.poc_java_spring_ai.ollama.component.InputGuardrail;
+import com.myprojecticaro.poc_java_spring_ai.ollama.component.MathTool;
 import com.myprojecticaro.poc_java_spring_ai.ollama.component.WeatherTool;
 import com.myprojecticaro.poc_java_spring_ai.ollama.domain.WeatherResponse;
 import org.springframework.ai.chat.client.ChatClient;
@@ -20,13 +21,16 @@ public class AiService {
 
     private final InputGuardrail guardrail;
 
+    private final MathTool mathTool;
+
 
     public AiService(ChatClient.Builder builder, ChatMemory chatMemory,
-                     WeatherTool weatherTool, InputGuardrail guardrail) {
+                     WeatherTool weatherTool, InputGuardrail guardrail,  MathTool mathTool) {
         this.chatClient = builder.build();
         this.chatMemory = chatMemory;
         this.weatherTool = weatherTool;
         this.guardrail = guardrail;
+        this.mathTool = mathTool;
     }
 
     public String ask(String question) {
@@ -137,6 +141,23 @@ public class AiService {
                         Responda de forma técnica e objetiva.
                         """)
                 .user(question)
+                .call()
+                .content();
+    }
+
+    public String askAgentMulTools(String question) {
+
+        return chatClient.prompt()
+                .system("""
+                    Você é um assistente inteligente.
+
+                    Use tools quando necessário:
+
+                    - perguntas sobre clima → WeatherTool
+                    - cálculos matemáticos → MathTool
+                    """)
+                .user(question)
+                .tools(weatherTool, mathTool)
                 .call()
                 .content();
     }
