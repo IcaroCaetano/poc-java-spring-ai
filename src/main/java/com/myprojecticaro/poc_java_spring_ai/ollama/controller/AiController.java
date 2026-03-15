@@ -305,7 +305,7 @@ public class AiController {
          * }
          */
 
-        return aiService.askAgentMulTools(request.question());
+        return aiService.askAgentMultTools(request.question());
 
         /**
          * SAida:

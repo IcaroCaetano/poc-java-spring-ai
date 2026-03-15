@@ -145,7 +145,7 @@ public class AiService {
                 .content();
     }
 
-    public String askAgentMulTools(String question) {
+    public String askAgentMultTools(String question) {
 
         return chatClient.prompt()
                 .system("""
