@@ -295,4 +295,9 @@ public class AiController {
          * }
          */
     }
+
+    @PostMapping("/ask-agent")
+    public String askAgent(@RequestBody AskRequest request) {
+        return aiService.askAgentMulTools(request.question());
+    }
 }
