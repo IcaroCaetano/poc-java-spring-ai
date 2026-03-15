@@ -299,5 +299,10 @@ public class AiController {
     @PostMapping("/ask-agent")
     public String askAgent(@RequestBody AskRequest request) {
         return aiService.askAgentMulTools(request.question());
+
+        /**
+         * SAida:
+         * O resultado d e45 multiplicado por 12 é 540.
+         */
     }
 }
