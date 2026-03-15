@@ -309,7 +309,7 @@ public class AiController {
 
         /**
          * SAida:
-         * O resultado d e45 multiplicado por 12 é 540.
+         * O resultado de 45 multiplicado por 12 é 540.
          */
     }
 }
