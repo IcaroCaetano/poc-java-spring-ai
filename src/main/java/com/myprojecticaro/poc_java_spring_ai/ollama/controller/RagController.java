@@ -15,7 +15,35 @@ public class RagController {
 
     @GetMapping("/ask")
     public String ask(@RequestParam String question) {
+
+        /**
+         * Resumo:
+         * Pergunta do usuário
+         *         │
+         *         ▼
+         * Busca semântica nos embeddings
+         *         │
+         *         ▼
+         * Recupera documentos relevantes
+         *         │
+         *         ▼
+         * Envia pergunta + contexto para o LLM
+         *         │
+         *         ▼
+         * Resposta baseada no contexto
+         *
+         * Entrada:
+         *
+         * http://localhost:8080/rag/ask?question=O que é Spring Boot?
+         */
         return ragService.ask(question);
+
+        /**
+         * SAida:
+         *
+         * SpringBoot é um framework Java para criação de aplicações standalone. Ele
+         * facilita a criação de microservices.
+         */
     }
 
 }
