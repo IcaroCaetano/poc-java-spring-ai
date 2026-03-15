@@ -27,7 +27,7 @@ public class RagController {
          * Recupera documentos relevantes
          *         │
          *         ▼
-         * Envia pergunta + contexto para o LLM
+         * Envia pergunta + contexto enriquecido para o LLM
          *         │
          *         ▼
          * Resposta baseada no contexto
