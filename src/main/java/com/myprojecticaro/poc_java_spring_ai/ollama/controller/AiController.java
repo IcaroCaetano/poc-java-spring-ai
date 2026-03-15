@@ -298,6 +298,13 @@ public class AiController {
 
     @PostMapping("/ask-agent")
     public String askAgent(@RequestBody AskRequest request) {
+        /**
+         * Entrada:
+         * {
+         *   "question": "Quanto é 45 * 12?"
+         * }
+         */
+
         return aiService.askAgentMulTools(request.question());
 
         /**
