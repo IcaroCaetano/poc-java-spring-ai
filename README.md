@@ -6,7 +6,7 @@
 
 ### 📌 1️⃣ Objetivo
 
-Esta Proof of Concept (POC) demonstra a integração entre:
+Demostrar a integração entre:
 
 - Spring AI
 2- Spring Boot
