@@ -965,6 +965,41 @@ Agents permitem que o modelo:
 
 ### 🧠 O que são AI Agents?
 
-
-
 Um AI Agent é um modelo que pode:
+
+´´´´
+pensar → decidir → executar ação → continuar a resposta
+´´´´
+
+Ou seja, o modelo passa a ter capacidade de invocar ferramentas (Tools) durante a geração da resposta.
+
+Exemplo de fluxo:
+
+´´´´
+Pergunta: Quanto é 45 * 12?
+
+LLM
+ ↓
+Detecta necessidade de cálculo
+ ↓
+Chama MathTool
+ ↓
+Recebe resultado
+ ↓
+Constrói resposta final
+´´´´
+Isso transforma o modelo em um agente capaz de interagir com o mundo externo.
+
+### 🏗️ Arquitetura Atual (Fase 9)
+
+´´´´
+controller
+ └── AiController
+
+service
+ └── AiService
+
+tools
+ ├── MathTool
+ └── WeatherTool
+´´´´
