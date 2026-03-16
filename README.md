@@ -1034,3 +1034,73 @@ Essas ferramentas são registradas no ChatClient para que o modelo possa utiliz�
 
 Exemplo simplificado:
 
+´´´´
+chatClient.prompt()
+    .user(question)
+    .tools(mathTool, weatherTool)
+    .call()
+    .content();
+´´´´
+
+### 🧪 Exemplo de uso
+
+Pergunta enviada:
+
+´´´´
+Quanto é 45 * 12?
+´´´´
+
+Fluxo interno:
+
+´´´´
+LLM detecta operação matemática
+ ↓
+MathTool é chamada
+ ↓
+Resultado retornado
+ ↓
+LLM gera resposta final
+´´´´
+
+Resposta:
+
+´´´´
+O resultado de 45 * 12 é 540.
+´´´´
+Outro exemplo:
+
+````
+Como está o clima em Fortaleza?
+````
+
+Fluxo:
+
+````
+LLM identifica necessidade de informação externa
+ ↓
+WeatherTool é chamada
+ ↓
+Resposta construída
+````
+
+### 🧪 Observações Técnicas
+
+AI Agents permitem:
+
+- integração com APIs externas
+
+- automação de tarefas
+
+- execução de lógica de negócio
+
+Tools podem acessar:
+
+- bancos de dados
+
+- APIs REST
+
+- sistemas internos
+
+- serviços externos
+
+Esse padrão é amplamente utilizado em assistentes inteligentes corporativos.
