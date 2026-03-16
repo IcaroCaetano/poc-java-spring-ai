@@ -947,51 +947,24 @@ Tipos comuns em produção:
 
 - Output Validation
 
-### 📈 Evolução da Arquitetura da POC
+## 🚀 Fase 9 — AI Agents
 
-Ao longo das fases, a arquitetura evoluiu gradualmente
+### 🎯 Objetivo
 
-````
-Fase 1 — Chat básico
-Fase 2 — Prompt Template
-Fase 3 — Chat Memory
-Fase 4 — Streaming
-Fase 5 — Embeddings
-Fase 6 — Tool Calling
-Fase 7 — Structured Output
-Fase 8 — Guardrails
-````
-A aplicação agora demonstra diversos recursos fundamentais do Spring AI.
+Introduzir o conceito de AI Agents, permitindo que o modelo utilize ferramentas externas para resolver problemas.
 
-### 🔬 Conceitos explorados na POC
+Agents permitem que o modelo:
 
-Durante a implementação foram explorados:
+- execute cálculos
 
-- ChatClient
+- consulte serviços externos
 
-- Prompt Engineering
+- combine múltiplas ferramentas
 
-- Chat Memory
+- resolver tarefas mais complexas
 
-- Streaming de respostas
+### 🧠 O que são AI Agents?
 
-- Embeddings
 
-- Tool Calling
 
-- Structured Output
-
-- Guardrails
-
-Esses conceitos representam grande parte das funcionalidades principais do Spring AI.
-
-## 🚀 Próximas Evoluções Possíveis
-
-A POC pode evoluir para funcionalidades mais avançadas
-
-````
-Fase 9  → Observability (AI Metrics)
-Fase 10 → AI Agents
-Fase 11 → Multi Tool Orchestration
-Fase 12 → RAG completo com Vector Database
-````
+Um AI Agent é um modelo que pode:
