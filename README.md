@@ -1231,3 +1231,30 @@ Embeddings convertem texto em vetores numéricos.
 ### 🧪 Testando o RAG
 
 Endpoint disponível:
+
+````
+GET /rag/ask?question={pergunta}
+````
+
+Exemplo:
+
+````
+GET /rag/ask?question=O que é Spring Boot?
+````
+Fluxo interno:
+
+````
+
+Pergunta
+ ↓
+Embedding da pergunta
+ ↓
+Busca semântica
+ ↓
+Recuperação de documentos
+ ↓
+Contexto injetado no prompt
+ ↓
+LLM gera resposta baseada nos documentos
+````
+
