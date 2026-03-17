@@ -1104,3 +1104,94 @@ Tools podem acessar:
 - serviços externos
 
 Esse padrão é amplamente utilizado em assistentes inteligentes corporativos.
+
+## 🚀 Fase 10 — Retrieval Augmented Generation (RAG)
+
+### 🎯 Objetivo
+
+Permitir que o modelo responda perguntas utilizando documentos externos como fonte de conhecimento.
+
+RAG permite:
+
+- responder perguntas sobre documentação interna
+
+- criar chatbots corporativos
+
+- reduzir alucinações do modelo
+
+- utilizar conhecimento privado da aplicação
+
+### 🧠 O que é RAG?
+
+RAG significa:
+
+Retrieval Augmented Generation
+
+O modelo não responde apenas com conhecimento próprio, mas também utilizando documentos recuperados dinamicamente.
+
+Fluxo:
+
+````
+Retrieval Augmented Generation
+````
+
+O modelo não responde apenas com conhecimento próprio, mas também utilizando documentos recuperados dinamicamente
+
+Fluxo:
+
+````
+Pergunta
+ ↓
+Embedding da pergunta
+ ↓
+Busca semântica no VectorStore
+ ↓
+Documentos relevantes
+ ↓
+Contexto adicionado ao prompt
+ ↓
+LLM gera resposta
+````
+
+### 🏗️ Arquitetura Atual (Fase 10)
+
+````
+controller
+ ├── AiController
+ └── RagController
+
+service
+ ├── AiService
+ └── RagService
+
+rag
+ └── DocumentLoader
+
+config
+ └── RagConfig
+````
+
+
+Fluxo:
+
+````
+Client
+ ↓
+RagController
+ ↓
+RagService
+ ↓
+QuestionAnswerAdvisor
+ ↓
+VectorStore
+ ↓
+Embeddings
+ ↓
+LLM
+ ↓
+Resposta baseada nos documentos
+````
+
+### ⚙️ Implementação
+
+Foi utilizado um Vector Store em memória para armazenar embeddings dos documentos.
