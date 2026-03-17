@@ -1046,13 +1046,13 @@ chatClient.prompt()
 
 Pergunta enviada:
 
-´´´´
+````
 Quanto é 45 * 12?
-´´´´
+````
 
 Fluxo interno:
 
-´´´´
+````
 LLM detecta operação matemática
  ↓
 MathTool é chamada
@@ -1060,13 +1060,13 @@ MathTool é chamada
 Resultado retornado
  ↓
 LLM gera resposta final
-´´´´
+````
 
 Resposta:
 
-´´´´
+````
 O resultado de 45 * 12 é 540.
-´´´´
+````
 Outro exemplo:
 
 ````
