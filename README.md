@@ -1213,7 +1213,21 @@ public SimpleVectorStore vectorStore(EmbeddingModel embeddingModel) {
 
 Foi criada uma classe responsável por carregar documentos no startup da aplicação.
 
+````java
+@PostConstruct
+public void loadDocuments() {
+    vectorStore.add(documents);
+}
+
+````
+Exemplo de documentos indexados:
+
+````
+Spring Boot é um framework Java para criação de aplicações.
+Spring AI permite integrar modelos de linguagem em aplicações Spring.
+Embeddings convertem texto em vetores numéricos.
 ````
 
+### 🧪 Testando o RAG
 
-````
+Endpoint disponível:
