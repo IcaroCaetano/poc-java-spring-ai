@@ -1005,7 +1005,7 @@ tools
 ````
 Fluxo:
 
-´´´´
+````
 Client
  ↓
 Controller
@@ -1019,28 +1019,28 @@ LLM decide usar Tool
 Tool executa ação
  ↓
 LLM continua resposta
-´´´´
+````
 
 ### ⚙️ Implementação
 
 Foram criadas duas ferramentas que podem ser chamadas pelo modelo.
 
-´´´´
+````
 MathTool
 WeatherTool
-´´´´
+````
 
 Essas ferramentas são registradas no ChatClient para que o modelo possa utilizá-las.
 
 Exemplo simplificado:
 
-´´´´
+````
 chatClient.prompt()
     .user(question)
     .tools(mathTool, weatherTool)
     .call()
     .content();
-´´´´
+````
 
 ### 🧪 Exemplo de uso
 
