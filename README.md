@@ -1195,3 +1195,25 @@ Resposta baseada nos documentos
 ### ⚙️ Implementação
 
 Foi utilizado um Vector Store em memória para armazenar embeddings dos documentos.
+
+````
+SimpleVectorStore
+````
+
+Configuração:
+
+````java
+@Bean
+public SimpleVectorStore vectorStore(EmbeddingModel embeddingModel) {
+    return SimpleVectorStore.builder(embeddingModel).build();
+}
+````
+
+### 📄 Carregamento de Documentos
+
+Foi criada uma classe responsável por carregar documentos no startup da aplicação.
+
+````
+
+
+````
