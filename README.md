@@ -1257,4 +1257,55 @@ Contexto injetado no prompt
  ↓
 LLM gera resposta baseada nos documentos
 ````
+RAG permite construir sistemas como:
 
+- Chat com documentação
+
+- Assistentes corporativos
+
+- Sistemas de busca inteligente
+
+Esse padrão é amplamente utilizado em aplicações modernas de IA.
+
+### 📈 Evolução da Arquitetura da POC
+
+A aplicação evoluiu gradualmente ao longo das fases:
+
+````
+Fase 1 — Chat básico
+Fase 2 — Prompt Template
+Fase 3 — Chat Memory
+Fase 4 — Streaming
+Fase 5 — Embeddings
+Fase 6 — Tool Calling
+Fase 7 — Structured Output
+Fase 8 — Guardrails
+Fase 9 — AI Agents
+Fase 10 — RAG (Retrieval Augmented Generation)
+````
+
+### 🔬 Conceitos explorados na POC
+
+Durante a implementação foram explorados:
+
+- ChatClient
+
+- Prompt Engineering
+
+- Chat Memory
+
+- Streaming de respostas
+
+- Embeddings
+
+- Tool Calling
+
+- Structured Output
+
+- Guardrails
+
+- AI Agents
+
+- Retrieval Augmented Generation (RAG)
+
+Esses conceitos representam os principais pilares do ecossistema do Spring AI
