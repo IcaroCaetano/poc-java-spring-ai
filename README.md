@@ -1309,3 +1309,15 @@ Durante a implementação foram explorados:
 - Retrieval Augmented Generation (RAG)
 
 Esses conceitos representam os principais pilares do ecossistema do Spring AI
+
+### 🚀 Próximas Evoluções Possíveis
+
+A POC pode evoluir para funcionalidades mais avançadas.
+
+````
+Fase 11 → Observability (AI Metrics)
+Fase 12 → Vector Database (PGVector / Redis / Milvus)
+Fase 13 → Document Chunking (Text Splitter)
+Fase 14 → Advanced RAG (Hybrid Search + Re-ranking)
+Fase 15 → Multi-Agent Systems
+````
