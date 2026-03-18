@@ -10,3 +10,12 @@ spring:
           temperature: 0.3
       embedding:
         model: nomic-embed-text
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: always
