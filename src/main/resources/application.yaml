@@ -1,21 +1,32 @@
 spring:
   application:
     name: poc-java-spring-ai
-  ai:
-    ollama:
-      base-url: http://localhost:11434
-      chat:
-        model: qwen2.5
-        options:
-          temperature: 0.3
-      embedding:
-        model: nomic-embed-text
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ai
+    username: postgres
+    password: postgres
+
+    ai:
+      vectorstore:
+        pgvector:
+          initialize-schema: true
+
+      ollama:
+        base-url: http://localhost:11434
+        chat:
+          model: qwen2.5
+          options:
+            temperature: 0.3
+        embedding:
+          model: nomic-embed-text
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-
   endpoint:
     health:
       show-details: always
+
+
+
