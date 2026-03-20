@@ -1348,6 +1348,49 @@ Observability transforma:
 Sistema de IA → Sistema mensurável
 ````
 
+### 🏗️ Arquitetura Atual (Fase 11)
+
+````
+controller
+ ├── AiController
+ └── RagController
+
+service
+ ├── AiService
+ └── RagService
+
+rag
+ └── DocumentLoader
+
+tools
+ ├── MathTool
+ └── WeatherTool
+
+config
+ └── RagConfig
+
+monitoring
+ └── Actuator
+````
+
+Fluxo:
+
+````
+Client
+ ↓
+Controller
+ ↓
+Service
+ ↓
+ChatClient
+ ↓
+Spring AI Metrics
+ ↓
+Actuator
+ ↓
+Monitoramento
+````
+
 ### 🚀 Próximas Evoluções Possíveis
 
 A POC pode evoluir para funcionalidades mais avançadas.
