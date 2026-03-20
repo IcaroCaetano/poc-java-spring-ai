@@ -1518,7 +1518,25 @@ config
  └── VectorStoreConfig
 ````
 
+Fluxo:
 
+````
+Client
+ ↓
+Controller
+ ↓
+RagService
+ ↓
+QuestionAnswerAdvisor
+ ↓
+VectorStore (PGVector)
+ ↓
+Embeddings
+ ↓
+LLM
+ ↓
+Resposta
+````
 
 
 ### 🚀 Próximas Evoluções Possíveis
