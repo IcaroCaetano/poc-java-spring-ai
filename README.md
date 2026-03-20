@@ -1394,6 +1394,41 @@ Monitoramento
 ### ⚙️ Implementação
 O Spring AI integra automaticamente com o Spring Boot Actuator.
 
+#### 📦 Dependência
+````xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+````
+
+#### ⚙️ Configuração
+
+````
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: always
+````
+
+#### 🔍 Endpoints disponíveis
+
+Health Check
+
+````
+GET /actuator/health
+````
+Listar métricas
+
+````
+GET /actuator/metrics/gen_ai.client.operation
+````
+
 ### 🚀 Próximas Evoluções Possíveis
 
 A POC pode evoluir para funcionalidades mais avançadas.
