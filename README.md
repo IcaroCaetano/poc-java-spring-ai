@@ -1537,6 +1537,46 @@ LLM
  ↓
 Resposta
 ````
+### 📦 Dependência
+
+````
+<dependency>
+    <groupId>org.springframework.ai</groupId>
+    <artifactId>spring-ai-starter-vector-store-pgvector</artifactId>
+</dependency>
+````
+### 🐳 Subindo o banco com Docker
+
+````
+docker run -d --name pgvector \
+-e POSTGRES_DB=ai \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_PASSWORD=postgres \
+-p 5432:5432 \
+ankane/pgvector
+````
+⚙️ Configuração
+
+````yaml
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ai
+    username: postgres
+    password: postgres
+
+  ai:
+    vectorstore:
+      pgvector:
+        initialize-schema: true
+
+    ollama:
+      base-url: http://localhost:11434
+      embedding:
+        model: nomic-embed-text
+````
+
+### 🧠 Configuração do VectorStore
+
 
 
 ### 🚀 Próximas Evoluções Possíveis
