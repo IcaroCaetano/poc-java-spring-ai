@@ -1452,6 +1452,18 @@ As métricas coletadas incluem:
 Essas métricas são coletadas automaticamente pelo Spring AI.
 
 
+### 📈 Benefícios
+
+Observability permite:
+
+- otimizar prompts
+
+- identificar gargalos
+
+- monitorar uso de IA
+
+- preparar aplicação para produção
+
 
 
 ### 🚀 Próximas Evoluções Possíveis
