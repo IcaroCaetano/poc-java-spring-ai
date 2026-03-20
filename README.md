@@ -1429,6 +1429,31 @@ Listar métricas
 GET /actuator/metrics/gen_ai.client.operation
 ````
 
+````
+GET /actuator/metrics/spring.ai.chat.client
+````
+
+````
+GET /actuator/metrics/spring.ai.advisor
+````
+
+### 🧪 Observações Técnicas
+
+As métricas coletadas incluem:
+
+- número de chamadas ao modelo
+
+- uso de tokens (input/output)
+
+- tempo de execução
+
+- uso de advisors (RAG, Memory, etc.)
+
+Essas métricas são coletadas automaticamente pelo Spring AI.
+
+
+
+
 ### 🚀 Próximas Evoluções Possíveis
 
 A POC pode evoluir para funcionalidades mais avançadas.
