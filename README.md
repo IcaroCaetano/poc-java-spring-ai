@@ -1592,12 +1592,58 @@ public class VectorStoreConfig {
 
 Agora o fluxo mudou:
 
+````
+DocumentLoader
+ ↓
+Embeddings
+ ↓
+PGVector (PostgreSQL)
+ ↓
+Dados persistidos
+````
+### 🧪 Teste de persistência
+
+PGVector permite:
+
+- busca por similaridade (cosine similarity)
+
+- armazenamento eficiente de embeddings
+
+- escalabilidade
+
+- integração com bancos relacionais
+
 
 ### 🚀 Próximas Evoluções Possíveis
 
 A POC pode evoluir para funcionalidades mais avançadas.
 
+## 🔬 Conceitos explorados na POC
 
+- ChatClient
+
+- Prompt Engineering
+
+- Chat Memory
+
+- Streaming
+
+- Embeddings
+
+- Tool Calling
+
+- Structured Output
+
+- Guardrails
+
+- AI Agents
+
+- RAG
+
+- Observability
+
+- Vector Database (PGVector
+- 
 ````
 Fase 13 → Document Chunking (Text Splitter)
 Fase 14 → Advanced RAG (Hybrid Search + Re-ranking)
