@@ -1391,6 +1391,9 @@ Actuator
 Monitoramento
 ````
 
+### ⚙️ Implementação
+O Spring AI integra automaticamente com o Spring Boot Actuator.
+
 ### 🚀 Próximas Evoluções Possíveis
 
 A POC pode evoluir para funcionalidades mais avançadas.
