@@ -1310,13 +1310,50 @@ Durante a implementação foram explorados:
 
 Esses conceitos representam os principais pilares do ecossistema do Spring AI
 
+## Fase 11 — Observability (AI Metrics)
+
+### 🎯 Objetivo
+
+Monitorar e analisar o comportamento das interações com o modelo de IA.
+
+Observability permite:
+
+- medir latência das chamadas ao modelo
+
+- acompanhar uso de tokens
+
+- monitorar erros e falhas
+
+- analisar performance do sistema
+
+- obter visibilidade do uso da IA
+
+### 🧠 Por que Observability é importante?
+
+Aplicações com LLM são caixas pretas por natureza.
+
+Sem métricas, não é possível saber:
+
+- se o modelo está lento
+
+- quanto está sendo consumido
+
+- onde estão os erros
+
+- como o sistema está se comportando
+
+Observability transforma:
+
+````
+Sistema de IA → Sistema mensurável
+````
+
 ### 🚀 Próximas Evoluções Possíveis
 
 A POC pode evoluir para funcionalidades mais avançadas.
 
+
 ````
-Fase 11 → Observability (AI Metrics)
-Fase 12 → Vector Database (PGVector / Redis / Milvus)
 Fase 13 → Document Chunking (Text Splitter)
 Fase 14 → Advanced RAG (Hybrid Search + Re-ranking)
 Fase 15 → Multi-Agent Systems
