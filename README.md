@@ -1577,6 +1577,20 @@ spring:
 
 ### 🧠 Configuração do VectorStore
 
+````
+@Configuration
+public class VectorStoreConfig {
+
+    @Bean
+    public VectorStore vectorStore(PgVectorStore pgVectorStore) {
+        return pgVectorStore;
+    }
+}
+````
+
+### 📄 Persistência de Embeddings
+
+Agora o fluxo mudou:
 
 
 ### 🚀 Próximas Evoluções Possíveis
