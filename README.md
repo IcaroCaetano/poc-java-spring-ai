@@ -1464,7 +1464,39 @@ Observability permite:
 
 - preparar aplicação para produção
 
+## 🚀 Fase 12 — Vector Database (PGVector)
 
+### 🎯 Objetivo
+
+Persistir embeddings em um banco de dados vetorial, substituindo o armazenamento em memória.
+
+Isso permite:
+
+- persistência dos dados
+
+- escalabilidade
+
+- melhor performance
+
+- uso em produção
+
+### 🧠 Por que usar Vector Database?
+
+Na fase anterior foi utilizado:
+
+````
+SimpleVectorStore (memória)
+````
+
+Limitações:
+
+- dados são perdidos ao reiniciar
+
+- não escala
+
+- não suporta grandes volumes
+
+- 
 
 ### 🚀 Próximas Evoluções Possíveis
 
