@@ -1496,7 +1496,30 @@ Limitações:
 
 - não suporta grandes volumes
 
-- 
+### ✅ Solução
+
+Utilizar PostgreSQL com extensão PGVector.
+
+### 🏗️ Arquitetura Atual (Fase 12)
+
+````
+controller
+ ├── AiController
+ └── RagController
+
+service
+ ├── AiService
+ └── RagService
+
+rag
+ └── DocumentLoader
+
+config
+ └── VectorStoreConfig
+````
+
+
+
 
 ### 🚀 Próximas Evoluções Possíveis
 
