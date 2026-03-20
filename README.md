@@ -1614,10 +1614,6 @@ PGVector permite:
 - integração com bancos relacionais
 
 
-### 🚀 Próximas Evoluções Possíveis
-
-A POC pode evoluir para funcionalidades mais avançadas.
-
 ## 🔬 Conceitos explorados na POC
 
 - ChatClient
@@ -1644,7 +1640,10 @@ A POC pode evoluir para funcionalidades mais avançadas.
 
 - Vector Database (PGVector
 
-  
+
+### 🚀 Próximas Evoluções Possíveis
+
+A POC pode evoluir para funcionalidades mais avançadas.
 ````
 Fase 13 → Document Chunking (Text Splitter)
 Fase 14 → Advanced RAG (Hybrid Search + Re-ranking)
