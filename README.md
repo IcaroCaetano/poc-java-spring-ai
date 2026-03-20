@@ -1643,7 +1643,8 @@ A POC pode evoluir para funcionalidades mais avançadas.
 - Observability
 
 - Vector Database (PGVector
-- 
+
+  
 ````
 Fase 13 → Document Chunking (Text Splitter)
 Fase 14 → Advanced RAG (Hybrid Search + Re-ranking)
