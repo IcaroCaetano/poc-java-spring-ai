@@ -47,7 +47,7 @@ With advanced features:
 - Context-aware answers based on documents
 - Vector storage integration
 
-###🗄️ Vector Database
+### 🗄️ Vector Database
 - PostgreSQL + PGVector
 - Persistent embeddings storage
 - Scalable semantic search
