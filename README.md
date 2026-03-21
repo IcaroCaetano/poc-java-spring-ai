@@ -51,3 +51,14 @@ With advanced features:
 - PostgreSQL + PGVector
 - Persistent embeddings storage
 - Scalable semantic search
+
+### 📊 Observability
+- Metrics via Spring Boot Actuator
+- Token usage tracking
+- Request monitoring
+- Performance analysis
+
+### 🛡️ Guardrails
+- Input validation
+- Security rules
+- Safer AI interactions
