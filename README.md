@@ -75,3 +75,20 @@ With advanced features:
 - RAG
 - Vector Databases
 - Observability
+
+
+### 📈 Evolution
+````
+Phase 1  → Basic Chat
+Phase 2  → Prompt Engineering
+Phase 3  → Chat Memory
+Phase 4  → Streaming
+Phase 5  → Embeddings
+Phase 6  → Tool Calling
+Phase 7  → Structured Output
+Phase 8  → Guardrails
+Phase 9  → AI Agents
+Phase 10 → RAG
+Phase 11 → Observability
+Phase 12 → Vector Database
+````
