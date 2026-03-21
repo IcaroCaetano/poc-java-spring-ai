@@ -62,3 +62,16 @@ With advanced features:
 - Input validation
 - Security rules
 - Safer AI interactions
+
+### 🧠 Key Concepts Covered
+- ChatClient API
+- Prompt Engineering
+- Chat Memory
+- Streaming (Reactive AI)
+- Embeddings
+- Tool Calling (Agents)
+- Structured Output
+- Guardrails
+- RAG
+- Vector Databases
+- Observability
